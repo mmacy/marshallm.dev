@@ -1,5 +1,5 @@
-baseURL = "https://example.docsy.dev/"
-title = "Goldydocs"
+baseURL = "https://mmacy.github.io/marshallm.dev"
+title = "Marsh Macy"
 
 # Language settings
 contentDir = "content/en"
@@ -48,35 +48,16 @@ blog = "/:section/:year/:month/:day/:slug/"
 [imaging]
 resampleFilter = "CatmullRom"
 quality = 75
-anchor = "smart"
+anchor = "Smart"
 
 # Language configuration
 
 [languages]
 [languages.en]
 languageName ="English"
-title = "Goldydocs"
+title = "Marsh Macy"
 [languages.en.params]
-description = "A Docsy example site"
-
-[languages.no]
-languageName ="Norsk"
-contentDir = "content/no"
-title = "Gulldoks"
-[languages.no.params]
-description = "Docsy er operativsystem for skyen"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
-
-[languages.fa]
-languageDirection = "rtl"
-languageName ="فارسی"
-contentDir = "content/fa"
-title = "اسناد گلدی"
-[languages.fa.params]
-description = "یک نمونه برای پوسته داکسی"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
+description = "Marsh's personal site"
 
 [markup]
   [markup.goldmark]
@@ -148,7 +129,7 @@ prism_syntax_highlighting = false
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
-breadcrumb_disable = false
+breadcrumb_disable = true
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
@@ -157,6 +138,8 @@ navbar_translucent_over_cover_disable = false
 sidebar_menu_compact = false
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
+
+showLightDarkModeMenu = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
