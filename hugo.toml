@@ -155,10 +155,10 @@ enable = false
 [params.links]
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-  name = "GitHub"
+  name = "github.com/mmacy"
   url = "https://github.com/mmacy"
   icon = "fab fa-github"
-  desc = "mmacy on GitHub"
+  desc = "Marsh's GitHub profile"
 
 # hugo module configuration
 [module]
