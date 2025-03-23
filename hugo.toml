@@ -2,19 +2,12 @@ baseURL = "https://mmacy.github.io/marshallm.dev"
 title = "Marsh Macy"
 
 # Language settings
-contentDir = "content/en"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-# Useful when translating.
-enableMissingTranslationPlaceholders = true
+contentDir = "content"
 
 enableRobotsTXT = true
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
-
-# Comment out to enable taxonomies in Docsy
-# disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # You can add your own taxonomies
 [taxonomies]
@@ -57,7 +50,7 @@ anchor = "Smart"
 languageName ="English"
 title = "Marsh Macy"
 [languages.en.params]
-description = "Marsh's personal site"
+description = "Blog and other content by Marsh Macy about technical writing, programming, and related topics."
 
 [markup]
   [markup.goldmark]
@@ -68,6 +61,7 @@ description = "Marsh's personal site"
   [markup.highlight]
     # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
     style = "tango"
+    noClasses = false
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
     # guessSyntax = "true"
 
@@ -75,10 +69,10 @@ description = "Marsh's personal site"
 [outputs]
 section = ["HTML", "print", "RSS"]
 
-# Everything below this are Site Params
+# Everything below are Site Params
 
 [params]
-privacy_policy = "https://policies.google.com/privacy"
+privacy_policy = "https://example.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -95,16 +89,16 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the
 # current doc set.
-version = "0.7.1"
+version = "0.0.1"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://mmacy.github.io/marshallm.dev"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/mmacy/marshallm.dev"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+# github_project_repo = "https://github.com/google/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -123,8 +117,8 @@ offlineSearch = false
 prism_syntax_highlighting = false
 
 [params.copyright]
-  authors = "Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
-  from_year = 2018
+  authors = "Marsh Macy | "
+  from_year = 2024
 
 # User interface configuration
 [params.ui]
@@ -139,6 +133,7 @@ sidebar_menu_compact = false
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 
+# Post install
 showLightDarkModeMenu = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
@@ -148,8 +143,8 @@ showLightDarkModeMenu = true
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! <a href="https://github.com/USERNAME/REPOSITORY/issues/new">Tell me more!</a>.'
+no = 'Bummer. <a href="https://github.com/USERNAME/REPOSITORY/issues/new">Tell me about it!</a>'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page,
@@ -158,38 +153,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 enable = false
 
 [params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-  name = "User mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-  name ="Twitter"
-  url = "https://example.org/twitter"
-  icon = "fab fa-twitter"
-  desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-  name = "Stack Overflow"
-  url = "https://example.org/stack"
-  icon = "fab fa-stack-overflow"
-  desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/google/docsy"
+  url = "https://github.com/mmacy"
   icon = "fab fa-github"
-  desc = "Development takes place here!"
-[[params.links.developer]]
-  name = "Slack"
-  url = "https://example.org/slack"
-  icon = "fab fa-slack"
-  desc = "Chat with other project developers"
-[[params.links.developer]]
-  name = "Developer mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discuss development issues around the project"
+  desc = "mmacy on GitHub"
 
 # hugo module configuration
 [module]
