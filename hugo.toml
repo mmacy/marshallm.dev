@@ -195,3 +195,13 @@ enable = false
       disableWatch = false
       source = 'docs'
       target = 'content/docs/project3'
+
+    # This project's Hugo module is in the superlib/docs/ directory.
+    # That means each project's docs/ directory can be a separate Hugo module.
+    [[module.imports]]
+    path = 'github.com/mmacy/repobar/superlib/docs'
+    disable = false
+    [[module.imports.mounts]]
+      disableWatch = false
+      source = '.'
+      target = 'content/docs/superlib'
