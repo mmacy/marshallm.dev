@@ -1,6 +1,7 @@
 ---
 title: "Welcome!"
 
+hide_feedback: true
 cascade:
   - type: "docs"
     target:

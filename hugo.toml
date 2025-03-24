@@ -167,3 +167,23 @@ enable = false
   [[module.imports]]
     path = "github.com/google/docsy"
     disable = false
+
+  [[module.imports]]
+    path = 'github.com/mmacy/repofoo'
+    disable = false
+    [[module.imports.mounts]]
+      disableWatch = false
+      source = 'docs'
+      target = 'content/docs/foo'
+
+  [[module.imports]]
+    path = 'github.com/mmacy/repobar'
+    disable = false
+    [[module.imports.mounts]]
+      disableWatch = false
+      source = 'docs'
+      target = 'content/docs/bar'
+    [[module.imports.mounts]]
+      disableWatch = false
+      source = 'project2/docs'
+      target = 'content/docs/project2'
